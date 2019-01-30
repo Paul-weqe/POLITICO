@@ -178,4 +178,26 @@ header li a {
     text-align: center;
 }
 
+/* styles for the viewed-voting-politicians.html */
+
+#voted-politicians {
+    position: absolute;
+    width: 65%;
+    left: 325px;
+}
+
+.politicians-table tr th {
+    /* margin-top: 10px; */
+    padding-top: 10px;
+}
+
+.voted-politician-image {
+    height: 200px;
+    width: 200px;
+}
+
+#voted-politicians h2 {
+    position: relative;
+    left: 250px;
+}
 
