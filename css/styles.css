@@ -21,7 +21,6 @@ header {
     box-shadow: 0 0 10px 0 black;
     z-index: 1;
     background-color: white;
-
 }
 
 header * {
@@ -201,4 +200,3 @@ header li a {
     position: relative;
     left: 250px;
 }
-
