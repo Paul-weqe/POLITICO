@@ -23,12 +23,25 @@ header {
     background-color: white;
 }
 
+#admin-right-navbar {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
+#politician-right-navbar {
+    position: absolute;
+    right: 150px;
+    top: 10px;
+}
+
 header * {
     display: inline;
 }
 
 header li {
-    margin: 20px;
+    margin: 20px; 
+    
 }
 
 header li a {
@@ -69,21 +82,19 @@ header li a {
 .auth-form-element {
     width: 100%;
     height: 35px;
-    /* margin: 5px; */
+    margin: 10px;
 }
 
-.auth-form input[type=text]:focus, .auth-form input[type=email]:focus, .auth-form input[type=password]:focus {
-    /* box-shadow: 0 0 0 0.25px rgba(81, 203, 238, 1); */
-    box-shadow: 0 0 0 0.25px rgb(40, 202, 121);
-}
 
 /* official color: F9AA23 */
 .auth-form button, #create-party-form button, .selected-list button {
-    height: 35px;
+    height: 50px;
+    width: 100px;
     margin-top: 5px;
     width: 100px;
-    background-color: #28CA79;
+    background-color: #CD181D;
     color: white;
+    border: none;
 }
 
 .auth-form button:hover {
@@ -92,7 +103,7 @@ header li a {
 
 .auth-form p a{
     text-decoration: none;
-    color: #28CA79;
+    color: #CD181D;
 }
 
 #create-party-form {
