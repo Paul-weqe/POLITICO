@@ -77,12 +77,14 @@ header li a {
     box-shadow: 0 0 0 0.25px rgb(40, 202, 121);
 }
 
-/* official color: F9AA23 */
-.auth-form button, #create-party-form button, .selected-list button,  #submit-final-vote {
-    height: 35px;
+/* official color: CD181D */
+.auth-form button, #create-party-form button, .selected-list button,  #submit-final-vote, #choose-voting-office tr td button,
+#voting-posts-div button {
+    border: none;
+    height: 50px;
     margin-top: 5px;
     width: 100px;
-    background-color: #28CA79;
+    background-color: #CD181D;
     color: white;
 }
 
@@ -156,11 +158,33 @@ header li a {
 
 
 /* styles for the voting-page.html */
-#voting-positions-div {
+.candidate-picture img {
+    height: 200px;
+    width: 200px;
 }
 
-.candidate-list {
+#submit-final-vote {
+    width: 500px;
+    position: absolute;
+    left: 550px;
+    background-color: #28CA79;
+} 
+
+#submit-final-vote:hover {
+    cursor: pointer;
+}
+
+#candidate-list {
+    margin: 0 auto;
+    width: 1000px;
     text-align: center;
+}
+
+#candidate-list table {
+    border-collapse: separate;
+    border-spacing: 10px 0;
+    text-align: center;
+    border-spacing: 1em;
 }
 
 .candidate-list li {
@@ -186,43 +210,27 @@ header li a {
     margin: 0 auto;
 }
 
-#voting-posts-div ul {
-    list-style-type: none;
-    font-size: 30px;
+#choose-voting-office {
+    font-size: 25px;
 }
 
-#voting-posts-div ul li {
-    padding: 0;
-    margin: 0 auto;
+#choose-voting-office tr>td {
+    padding-bottom: 1em;
+    padding-top: 1em;
 }
 
-#candidate-list {
-    /* position: relative;
-    left: 13%;
-    text-align: center; */
-    margin: 0 auto;
-    width: 1000px;
-    /* background-color: #28CA79; */
+#choose-voting-office tr td button {
+    width: 100px;
 }
 
-#candidate-list table {
-    border-collapse: separate;
-    border-spacing: 10px 0;
-    text-align: center;
-    border-spacing: 1em;
+#choose-voting-office tr td button a {
+    text-decoration: none;
+    color: white;
 }
 
-.candidate-picture img {
-    height: 200px;
-    width: 200px;
+#voting-posts-div button{
+    margin-top: 10px;
+    width: 250px;
+    background-color: #28CA79;
 }
 
-#submit-final-vote {
-    width: 500px;
-    position: absolute;
-    left: 550px;
-} 
-
-#submit-final-vote:hover {
-    cursor: pointer;
-}
