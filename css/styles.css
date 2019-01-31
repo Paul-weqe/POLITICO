@@ -27,6 +27,12 @@ header * {
     display: inline;
 }
 
+#profile {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
 header li {
     margin: 20px;
 }
@@ -81,14 +87,15 @@ header li a {
 }
 
 .auth-form button, #create-party-form button, #create-office-form button, .selected-list button {
-    height: 35px;
+    height: 50px;
     margin-top: 5px;
-    width: 100px;
-    background-color: #28CA79;
+    /* width: 100px; */
+    border: none;
+    background-color: #CD181D;
     color: white;
 }
 
-.auth-form button:hover {
+.auth-form button:hover, #create-office-form button:hover {
     cursor: pointer;
 }
 
@@ -97,12 +104,15 @@ header li a {
     color: #28CA79;
 }
 
+/* styles for admin-create-office.html */
+
 #create-party-form, #create-office-form {
     position: absolute;
     left: 500px;
     width: 600px; 
     top: 30px;
 }
+
 
 #create-party-form {
     height: 30px;
