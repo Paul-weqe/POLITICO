@@ -201,3 +201,23 @@ header li a {
     left: 250px;
 }
 
+/* styles for the view-political-parties.html */
+#political-parties-div {
+    position: absolute;
+    /* left: 40%; */
+    text-align: left;
+    width: 100%;
+}
+
+#political-parties-div table {
+    /* width: 600px; */
+    width: 100%;
+    text-align: center;
+}
+
+.party-logo {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
