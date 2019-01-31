@@ -122,14 +122,18 @@ header li a {
 }
 
 /* official color: F9AA23 */
-.auth-form button, #create-party-form button, .selected-list button {
+.auth-form button, #create-party-form button, .selected-list button, #select-office-to-view  {
+
     height: 50px;
     margin-top: 5px;
+    border: none;
     width: 100px;
     background-color: #CD181D;
     color: white;
     border:none;
 }
+
+
 
 .auth-form button:hover {
     cursor: pointer;
@@ -224,6 +228,10 @@ header li a {
 }
 
 /* styles for the view-profile.html */
+
+#select-office-to-view {
+    height: 35px;
+}
 
 #profile-description-picture img {
     height: 300px;
