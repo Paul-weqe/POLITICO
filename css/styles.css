@@ -20,6 +20,8 @@ header {
     align-items: center;
     box-shadow: 0 0 10px 0 black;
     z-index: 1;
+    background-color: white;
+
 }
 
 header * {
@@ -40,6 +42,8 @@ header li a {
 .main-content {
     top: 100px;
     position: absolute;
+    width: 95%;
+    /* background-color: red; */
 }
 
 .auth-form {
@@ -152,5 +156,53 @@ header li a {
 
 .selected-list button:hover {
     cursor: pointer;
+}
+
+
+
+/* styles for the voting-page.html */
+#voting-positions-div {
+}
+
+.candidate-list {
+    text-align: center;
+}
+
+.candidate-list li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+.candidate-voting-picture {
+    height: 300px;
+    width: 300px;
+}
+
+#voting-positions-div h2 {
+    text-align: center;
+}
+
+/* styles for the viewed-voting-politicians.html */
+
+#voted-politicians {
+    position: absolute;
+    width: 65%;
+    left: 325px;
+}
+
+.politicians-table tr th {
+    /* margin-top: 10px; */
+    padding-top: 10px;
+}
+
+.voted-politician-image {
+    height: 200px;
+    width: 200px;
+}
+
+#voted-politicians h2 {
+    position: relative;
+    left: 250px;
 }
 
