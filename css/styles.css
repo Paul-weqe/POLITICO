@@ -45,6 +45,13 @@ header li a {
     /* background-color: red; */
 }
 
+#profile {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
+
 .auth-form {
     position: relative;
     left: 250px;
@@ -187,6 +194,7 @@ header li a {
     border-spacing: 1em;
 }
 
+
 .candidate-list li {
     list-style-type: none;
     display: inline-block;
@@ -228,9 +236,17 @@ header li a {
     color: white;
 }
 
+#choose-voting-office tr td button:hover {
+    cursor: pointer;
+}
+
 #voting-posts-div button{
     margin-top: 10px;
     width: 250px;
     background-color: #28CA79;
+}
+
+#voting-posts-div button:hover {
+    cursor: pointer;
 }
 
