@@ -78,7 +78,7 @@ header li a {
 }
 
 /* official color: F9AA23 */
-.auth-form button, #create-party-form button, .selected-list button {
+.auth-form button, #create-party-form button, .selected-list button,  #submit-final-vote {
     height: 35px;
     margin-top: 5px;
     width: 100px;
@@ -178,4 +178,51 @@ header li a {
     text-align: center;
 }
 
+/* styles for the choose-post-to-vote.html */
+#voting-posts-div {
+    position: relative;
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+}
 
+#voting-posts-div ul {
+    list-style-type: none;
+    font-size: 30px;
+}
+
+#voting-posts-div ul li {
+    padding: 0;
+    margin: 0 auto;
+}
+
+#candidate-list {
+    /* position: relative;
+    left: 13%;
+    text-align: center; */
+    margin: 0 auto;
+    width: 1000px;
+    /* background-color: #28CA79; */
+}
+
+#candidate-list table {
+    border-collapse: separate;
+    border-spacing: 10px 0;
+    text-align: center;
+    border-spacing: 1em;
+}
+
+.candidate-picture img {
+    height: 200px;
+    width: 200px;
+}
+
+#submit-final-vote {
+    width: 500px;
+    position: absolute;
+    left: 550px;
+} 
+
+#submit-final-vote:hover {
+    cursor: pointer;
+}
