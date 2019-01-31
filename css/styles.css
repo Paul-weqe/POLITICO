@@ -1,5 +1,10 @@
-header img {
+
+header a {
     height: 80px;
+}
+
+header a img {
+    height: 100%;
     margin-left: 40px;
 }
 body {
@@ -86,7 +91,9 @@ header li a {
     background-color: #CD181D;
     color: white;
 }
-
+.auth-form button:hover, #create-party-form button:hover, .selected-list button:hover {
+    cursor: pointer;
+}
 .auth-form button:hover {
     cursor: pointer;
 }
@@ -125,6 +132,10 @@ header li a {
 
 #create-party-form * {
     margin-top: 2px;
+}
+
+#create-party-form button {
+    border: none;
 }
 
 #government-offices {
@@ -206,3 +217,9 @@ header li a {
     left: 250px;
 }
 
+
+#profile {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
