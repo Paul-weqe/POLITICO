@@ -14,7 +14,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    right: 0;  
     height: 80px;
     display: flex;
     align-items: center;
@@ -42,9 +42,13 @@ header li a {
     top: 100px;
     position: absolute;
     width: 95%;
-    /* background-color: red; */
 }
 
+
+/*
+ styles of the forms used to create a user and to login a user
+ both forms used to create and login a user are under the class 'auth-form'
+*/
 .auth-form {
     position: relative;
     left: 250px;
@@ -73,11 +77,9 @@ header li a {
 }
 
 .auth-form input[type=text]:focus, .auth-form input[type=email]:focus, .auth-form input[type=password]:focus {
-    /* box-shadow: 0 0 0 0.25px rgba(81, 203, 238, 1); */
     box-shadow: 0 0 0 0.25px rgb(40, 202, 121);
 }
 
-/* official color: F9AA23 */
 .auth-form button, #create-party-form button, #create-office-form button, .selected-list button {
     height: 35px;
     margin-top: 5px;
@@ -184,7 +186,6 @@ header li a {
 }
 
 /* styles for the viewed-voting-politicians.html */
-
 #voted-politicians {
     position: absolute;
     width: 65%;
@@ -192,7 +193,6 @@ header li a {
 }
 
 .politicians-table tr th {
-    /* margin-top: 10px; */
     padding-top: 10px;
 }
 
@@ -205,4 +205,5 @@ header li a {
     position: relative;
     left: 250px;
 }
+
 
