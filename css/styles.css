@@ -1,3 +1,5 @@
+/* styles for the politico navigation bar and the body positioning */
+
 header img {
     height: 80px;
     margin-left: 40px;
@@ -34,6 +36,19 @@ header li {
 header li a {
     color: black;
     text-decoration: none;
+}
+
+#profile {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
+#about {
+    position: absolute;
+    right: 80px;
+    top: 10px;
+    margin-right: 60px;
 }
 
 /* styles of the main elements in the body */
@@ -82,7 +97,7 @@ header li a {
     height: 35px;
     margin-top: 5px;
     width: 100px;
-    background-color: #28CA79;
+    background-color: #CD181D;
     color: white;
 }
 
@@ -200,4 +215,3 @@ header li a {
     position: relative;
     left: 250px;
 }
-
