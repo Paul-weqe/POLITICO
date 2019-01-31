@@ -95,6 +95,12 @@ header li a {
     color: #28CA79;
 }
 
+#profile {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
 #create-party-form {
     position: absolute;
     left: 500px;
@@ -204,7 +210,7 @@ header li a {
 /* styles for the politicians-express-interest.html */
 .government-position-form select{
     height: 50px;
-    width: 400px;
+    width: 500px;
     position: relative;
 }
 
