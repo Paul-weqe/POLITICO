@@ -82,7 +82,7 @@ header li a {
     height: 35px;
     margin-top: 5px;
     width: 100px;
-    background-color: #28CA79;
+    background-color: #CD181D;
     color: white;
 }
 
@@ -225,6 +225,7 @@ header li a {
 
 .government-position-form button {
     width: 300px;
+    height: 50px;
 }
 
 .government-position-form button:hover {
