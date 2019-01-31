@@ -78,7 +78,7 @@ header li a {
 }
 
 /* official color: F9AA23 */
-.auth-form button, #create-party-form button, .selected-list button {
+.auth-form button, #create-party-form button, .selected-list button, .government-position-form button {
     height: 35px;
     margin-top: 5px;
     width: 100px;
@@ -112,7 +112,7 @@ header li a {
     height: 40px;
 }
 
-#create-party-form textarea {
+#create-party-form textarea, .government-position-form textarea {
     width: 100%;
     resize: none;
     height: 150px;
@@ -201,3 +201,32 @@ header li a {
     left: 250px;
 }
 
+/* styles for the politicians-express-interest.html */
+.government-position-form select{
+    height: 50px;
+    width: 400px;
+    position: relative;
+}
+
+.government-position-form {
+    margin-top: 100px;
+}
+
+.government-position-form * {
+    height: 50px;
+    left: 50%;
+    position: relative;
+    margin-top: 5px;
+}
+
+.government-position-form textarea {
+    height: 200px;
+}
+
+.government-position-form button {
+    width: 300px;
+}
+
+.government-position-form button:hover {
+    cursor: pointer;
+}
