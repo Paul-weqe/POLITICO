@@ -93,6 +93,9 @@ header li a {
     margin: 5px;
 }
 
+<<<<<<< HEAD
+#profile {
+=======
 .auth-form span {
     float: left;
     left: 5px;
@@ -101,11 +104,14 @@ header li a {
 }
 
 #admin-right-navbar {
+>>>>>>> gh-pages
     position: absolute;
     right: 30px;
     top: 10px;
 }
 
+<<<<<<< HEAD
+=======
 #politician-right-navbar {
     position: absolute;
     right: 150px;
@@ -119,6 +125,7 @@ header li a {
 }
 
 
+>>>>>>> gh-pages
 .auth-form input[type=text]:focus, .auth-form input[type=email]:focus, .auth-form input[type=password]:focus {
     /* box-shadow: 0 0 0 0.25px rgba(81, 203, 238, 1); */
     box-shadow: 0 0 0 0.25px rgb(40, 202, 121);
@@ -320,6 +327,35 @@ header li a {
     left: 350px;
 }
 
+<<<<<<< HEAD
+/* styles for the view-political-parties.html */
+#political-parties-div {
+    position: relative;
+    left: 150px;
+    width: 80%;
+}
+
+#political-parties-div table {
+    /* width: 600px; */
+    width: 100%;
+    text-align: center;
+}
+
+#political-parties-div table tr th {
+    font-size: 22.5px;
+}
+
+#political-parties-div table tr td {
+    font-size: 20px;
+} 
+
+.party-logo {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+=======
 #voting-standings h2 {
     position: absolute;
     right: 260px;
@@ -342,3 +378,4 @@ header li a {
     border: 1px solid black;
 
 }
+>>>>>>> gh-pages
