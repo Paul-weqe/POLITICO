@@ -137,6 +137,11 @@ header li a {
     margin-top: 10px;
 }
 
+#create-office-form select {
+    height: 40px;
+    width: 300px;
+}
+
 #create-party-form * {
     margin-top: 2px;
 }
