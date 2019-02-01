@@ -127,12 +127,14 @@ header li a {
 #create-party-form input, #create-office-form input {
     width: 100%;
     height: 40px;
+    margin-top: 10px;
 }
 
 #create-party-form textarea, #create-office-form textarea {
     width: 100%;
     resize: none;
     height: 150px;
+    margin-top: 10px;
 }
 
 #create-party-form * {
