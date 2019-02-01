@@ -30,12 +30,25 @@ header {
     background-color: white;
 }
 
+#admin-right-navbar {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
+#politician-right-navbar {
+    position: absolute;
+    right: 150px;
+    top: 10px;
+}
+
 header * {
     display: inline;
 }
 
 header li {
-    margin: 20px;
+    margin: 20px; 
+    
 }
 
 header li a {
@@ -90,6 +103,14 @@ header li a {
 .auth-form-element {
     width: 100%;
     height: 35px;
+    margin: 10px;
+}
+
+
+/* official color: F9AA23 */
+.auth-form button, #create-party-form button, .selected-list button {
+    height: 50px;
+    width: 100px;
     margin: 5px;
 }
 
@@ -127,6 +148,7 @@ header li a {
     width: 100px;
     background-color: #CD181D;
     color: white;
+    border: none;
     border:none;
 }
 
