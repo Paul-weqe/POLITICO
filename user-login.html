@@ -10,7 +10,7 @@
     <body>
         
         <header>
-            <a href=""><img src="./images/politico_logo.png"></a>
+            <a href="index.html"><img src="./images/politico_logo.png"></a>
             <nav>
                 <ul>
                     <!-- <li><a href="#">Login</a></li>
@@ -26,16 +26,23 @@
             <div class="auth-form-div">
                 <h2>Login to your voters account</h2>
                 <form class="auth-form">
-                    <input type="email" placeholder="email or username" class="auth-form-element"/><br>
+                    <input type="email" placeholder="email" class="auth-form-element"/><br>
                     <input type="password" placeholder="password" class="auth-form-element"/><br>
-                    <button type="submit">Login</button>
-                    <center><p>Don't have an account? <a href="">Create one</a></p></center>
+                    <select>
+                        <option name="Politician">Politician</option>
+                        <option name="Admin">Admin</option>
+                        <option name="Voter">Voter</option>
+                    </select><br>
+                    <button id="submit-login">Login</button>
+                    <center><p>Don't have an account? <a href="user-register.html">Create one</a></p></center>
                 </form><br>
                 
             </div>
             
     
         </div>
+
+        <script src="js/styles.js"></script>
 
     </body>
 </html>

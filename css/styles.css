@@ -127,6 +127,11 @@ footer {
     top: 30px;
 }
 
+.auth-form select {
+    height: 40px;
+    width: 200px;
+}
+
 .auth-form-div {
     left: 300px;
     position: absolute;
