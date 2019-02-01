@@ -1,9 +1,16 @@
+
 header img {
     height: 80px;
+}
+
+header a img {
+    height: 100%;
     margin-left: 40px;
 }
+
 body {
     padding: 30px;
+    background-color: #E8E8E8;
 }
 
 main {
@@ -23,6 +30,18 @@ header {
     background-color: white;
 }
 
+#admin-right-navbar {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
+#politician-right-navbar {
+    position: absolute;
+    right: 150px;
+    top: 10px;
+}
+
 header * {
     display: inline;
 }
@@ -34,13 +53,28 @@ header * {
 }
 
 header li {
-    margin: 20px;
+    margin: 20px; 
+    
 }
 
 header li a {
     color: black;
     text-decoration: none;
 }
+
+#profile {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
+#about {
+    position: absolute;
+    right: 80px;
+    top: 10px;
+    margin-right: 60px;
+}
+
 
 /* styles of the main elements in the body */
 
@@ -79,29 +113,60 @@ header li a {
 .auth-form-element {
     width: 100%;
     height: 35px;
-    /* margin: 5px; */
+    margin: 10px;
 }
+
+
+/* official color: F9AA23 */
+.auth-form button, #create-party-form button, .selected-list button {
+    height: 50px;
+    width: 100px;
+    margin: 5px;
+}
+
+#profile {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
+.auth-form span {
+    float: left;
+    left: 5px;
+    position: relative;
+
+}
+
+#politician-right-navbar {
+    position: absolute;
+    right: 150px;
+    top: 10px;
+}
+
 
 .auth-form input[type=text]:focus, .auth-form input[type=email]:focus, .auth-form input[type=password]:focus {
     box-shadow: 0 0 0 0.25px rgb(40, 202, 121);
 }
 
-.auth-form button, #create-party-form button, #create-office-form button, .selected-list button {
+
+.auth-form button, #create-party-form button, .selected-list button, #select-office-to-view, #create-office-form button, .selected-list button  {
     height: 50px;
     margin-top: 5px;
-    /* width: 100px; */
     border: none;
+    width: 100px;
     background-color: #CD181D;
     color: white;
+    border: none;
+    border:none;
 }
 
-.auth-form button:hover, #create-office-form button:hover {
+.auth-form button:hover, #create-party-form button:hover, .selected-list button:hover {
     cursor: pointer;
 }
 
 .auth-form p a{
     text-decoration: none;
-    color: #28CA79;
+    color: #CD181D;
 }
 
 /* styles for admin-create-office.html */
@@ -130,6 +195,10 @@ header li a {
     margin-top: 10px;
 }
 
+#create-party-form input[type=file] {
+    width: 400px;
+}
+
 #create-party-form textarea, #create-office-form textarea {
     width: 100%;
     resize: none;
@@ -139,6 +208,10 @@ header li a {
 
 #create-party-form * {
     margin-top: 2px;
+}
+
+#create-party-form button {
+    border: none;
 }
 
 #government-offices {
@@ -175,8 +248,8 @@ header li a {
 
 
 /* styles for the voting-page.html */
-#voting-positions-div {
-}
+/* #voting-positions-div {
+} */
 
 .candidate-list {
     text-align: center;
@@ -198,14 +271,82 @@ header li a {
 }
 
 /* styles for the viewed-voting-politicians.html */
+
+/* styles for the view-profile.html */
+
+#select-office-to-view {
+    height: 35px;
+}
+
+#profile-description-picture img {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    left: 50px;
+    margin: 10px;
+}
+
+#user-description-details {
+    position: absolute;
+    left: 500px;
+    margin: 10px;
+    width: 1000px;
+    font-size: 25px;
+}
+
+#user-description-details ul {
+    list-style-type: none;
+}
+
 #voted-politicians {
     position: absolute;
-    width: 65%;
-    left: 325px;
+    width: 55%;
+    left: 20px;
+    top: 500px;
+    /* background-color: blue; */
+    margin-bottom: 20px;
+    padding-left: 5px;
 }
 
 .politicians-table tr th {
     padding-top: 10px;
+}
+
+#voting-standings {
+    height: 300px;
+    width: 40%;
+    /* background-color: aqua; */
+    position: absolute;
+    top: 500px;
+    right: 20px;
+}
+
+#voting-standings table {
+    position: relative;
+    left: 10px;
+    width: 95%;
+    top: 65px;
+}
+
+#voting-standings table td {
+    white-space: pre;
+    text-align: center;
+}
+
+#choose-view-category select {
+    width: 250px;
+    height: 35px;
+}
+
+#choose-view-category {
+    position: relative;
+    top: 60px;
+    left: 10px;  
+}
+
+#choose-view-category button {
+    position: relative;
+    right: 0;
 }
 
 .voted-politician-image {
@@ -213,9 +354,61 @@ header li a {
     width: 200px;
 }
 
+
 #voted-politicians h2 {
     position: relative;
-    left: 250px;
+    left: 350px;
 }
 
 
+
+/* styles for the view-political-parties.html */
+#political-parties-div {
+    position: relative;
+    left: 150px;
+    width: 80%;
+}
+
+#political-parties-div table {
+    /* width: 600px; */
+    width: 100%;
+    text-align: center;
+}
+
+#political-parties-div table tr th {
+    font-size: 22.5px;
+}
+
+#political-parties-div table tr td {
+    font-size: 20px;
+} 
+
+.party-logo {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+
+#voting-standings h2 {
+    position: absolute;
+    right: 260px;
+}
+
+#profile {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+.politicians-table tr th {
+    padding: 10px;
+}
+
+.politicians-table, #voting-standings table {
+    border-collapse: collapse;
+}
+
+.politicians-table td, .politicians-table th, #voting-standings table td, #voting-standings table th {
+    border: 1px solid black;
+
+}
