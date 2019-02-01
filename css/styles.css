@@ -79,6 +79,13 @@ header li a {
     /* background-color: red; */
 }
 
+#profile {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
+
 .auth-form {
     position: relative;
     left: 250px;
@@ -140,7 +147,9 @@ header li a {
 }
 
 /* official color: F9AA23 */
-.auth-form button, #create-party-form button, .selected-list button, .government-position-form button {
+.auth-form button, #create-party-form button, .selected-list button, .government-position-form button, #submit-final-vote, #choose-voting-office tr td button,
+#voting-posts-div button {
+    border: none;
     height: 50px;
     margin-top: 5px;
     border: none;
@@ -237,9 +246,35 @@ header li a {
 /* #voting-positions-div {
 } */
 
-.candidate-list {
+.candidate-picture img {
+    height: 200px;
+    width: 200px;
+}
+
+#submit-final-vote {
+    width: 500px;
+    position: absolute;
+    left: 550px;
+    background-color: #28CA79;
+} 
+
+#submit-final-vote:hover {
+    cursor: pointer;
+}
+
+#candidate-list {
+    margin: 0 auto;
+    width: 1000px;
     text-align: center;
 }
+
+#candidate-list table {
+    border-collapse: separate;
+    border-spacing: 10px 0;
+    text-align: center;
+    border-spacing: 1em;
+}
+
 
 .candidate-list li {
     list-style-type: none;
@@ -290,6 +325,46 @@ header li a {
     /* background-color: blue; */
     margin-bottom: 20px;
     padding-left: 5px;
+}
+
+/* styles for the choose-post-to-vote.html */
+#voting-posts-div {
+    position: relative;
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+}
+
+#choose-voting-office {
+    font-size: 25px;
+}
+
+#choose-voting-office tr>td {
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+#choose-voting-office tr td button {
+    width: 100px;
+}
+
+#choose-voting-office tr td button a {
+    text-decoration: none;
+    color: white;
+}
+
+#choose-voting-office tr td button:hover {
+    cursor: pointer;
+}
+
+#voting-posts-div button{
+    margin-top: 10px;
+    width: 250px;
+    background-color: #28CA79;
+}
+
+#voting-posts-div button:hover {
+    cursor: pointer;
 }
 
 #voting-standings {
