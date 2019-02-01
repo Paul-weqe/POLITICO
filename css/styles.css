@@ -1,12 +1,13 @@
 
-header img {
+header a {
     height: 80px;
+    margin-left: 40px;
 }
 
 header a img {
     height: 100%;
-    margin-left: 40px;
 }
+
 
 body {
     padding: 30px;
@@ -16,6 +17,7 @@ body {
 main {
     color: white;
 }
+
 
 header {
     position: fixed;
@@ -56,19 +58,59 @@ header li a {
     text-decoration: none;
 }
 
-#profile {
+#profile, #about {
     position: absolute;
     right: 30px;
     top: 10px;
 }
 
-#about {
-    position: absolute;
-    right: 80px;
-    top: 10px;
-    margin-right: 60px;
+#about { top: 10px; margin-right: 60px; }
+
+/* design for elements in the footer */
+
+footer {
+    height: 300px;
+    width: 100%;
+    margin-top: 100px;
+    background-color: #CD181D;
+    position: relative;
+    
 }
 
+.contacts, .quotes, .info{
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 475px;
+}
+
+.contacts {left: 20px; }
+.quotes { left: 20px; }
+.info { left: 20px; }
+
+/* styles for the landing page index.html */
+
+.landing-page-left-image {
+    position: relative;
+    height: 500px;
+    width: 750px;
+}
+
+
+.landing-page-right-quote {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    width: 600px;
+}
+
+#landing-quote-author {
+    font-size: 20px;
+}
+
+#landing-quote-text {
+    font-size: 50px;
+}
 
 /* styles of the main elements in the body */
 
@@ -78,13 +120,6 @@ header li a {
     width: 95%;
     /* background-color: red; */
 }
-
-#profile {
-    position: absolute;
-    right: 30px;
-    top: 10px;
-}
-
 
 .auth-form {
     position: relative;
@@ -115,18 +150,6 @@ header li a {
 
 
 /* official color: F9AA23 */
-.auth-form button, #create-party-form button, .selected-list button {
-    height: 50px;
-    width: 100px;
-    margin: 5px;
-}
-
-#profile {
-    position: absolute;
-    right: 30px;
-    top: 10px;
-}
-
 .auth-form span {
     float: left;
     left: 5px;
@@ -142,7 +165,6 @@ header li a {
 
 
 .auth-form input[type=text]:focus, .auth-form input[type=email]:focus, .auth-form input[type=password]:focus {
-    /* box-shadow: 0 0 0 0.25px rgba(81, 203, 238, 1); */
     box-shadow: 0 0 0 0.25px rgb(40, 202, 121);
 }
 
@@ -160,19 +182,14 @@ header li a {
     border:none;
 }
 
-.auth-form button:hover, #create-party-form button:hover, .selected-list button:hover {
+.auth-form button:hover, #create-party-form button:hover, .selected-list button:hover, .government-position-form button:hover,  
+#choose-voting-office tr td button:hover, #voting-posts-div button:hover {
     cursor: pointer;
 }
 
 .auth-form p a{
     text-decoration: none;
     color: #CD181D;
-}
-
-#profile {
-    position: absolute;
-    right: 30px;
-    top: 10px;
 }
 
 #create-party-form {
@@ -236,15 +253,7 @@ header li a {
     height: 50px;
 }
 
-.selected-list button:hover {
-    cursor: pointer;
-}
-
-
-
 /* styles for the voting-page.html */
-/* #voting-positions-div {
-} */
 
 .candidate-picture img {
     height: 200px;
@@ -353,9 +362,6 @@ header li a {
     color: white;
 }
 
-#choose-voting-office tr td button:hover {
-    cursor: pointer;
-}
 
 #voting-posts-div button{
     margin-top: 10px;
@@ -363,9 +369,7 @@ header li a {
     background-color: #28CA79;
 }
 
-#voting-posts-div button:hover {
-    cursor: pointer;
-}
+
 
 #voting-standings {
     height: 300px;
@@ -440,11 +444,6 @@ header li a {
 
 .government-position-form button {
     width: 300px;
-    height: 50px;
-}
-
-.government-position-form button:hover {
-    cursor: pointer;
 }
 
 /* styles for the view-political-parties.html */
@@ -481,20 +480,16 @@ header li a {
     right: 260px;
 }
 
-#profile {
-    position: absolute;
-    right: 30px;
-    top: 10px;
-}
-.politicians-table tr th {
-    padding: 10px;
+
+
+.politicians-table tr th { 
+    padding: 10px; 
 }
 
-.politicians-table, #voting-standings table {
-    border-collapse: collapse;
+.politicians-table, #voting-standings table { 
+    border-collapse: collapse; 
 }
 
 .politicians-table td, .politicians-table th, #voting-standings table td, #voting-standings table th {
     border: 1px solid black;
-
 }
