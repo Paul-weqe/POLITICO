@@ -1,13 +1,12 @@
 
-header a {
+header img {
     height: 80px;
-    margin-left: 40px;
 }
 
 header a img {
     height: 100%;
+    margin-left: 40px;
 }
-
 
 body {
     padding: 30px;
@@ -17,7 +16,6 @@ body {
 main {
     color: white;
 }
-
 
 header {
     position: fixed;
@@ -64,59 +62,19 @@ header li a {
     text-decoration: none;
 }
 
-#profile, #about {
+#profile {
     position: absolute;
     right: 30px;
     top: 10px;
 }
 
-#about { top: 10px; margin-right: 60px; }
-
-/* design for elements in the footer */
-
-footer {
-    height: 300px;
-    width: 100%;
-    margin-top: 100px;
-    background-color: #CD181D;
-    position: relative;
-    
-}
-
-.contacts, .quotes, .info{
-    display: inline-block;
-    position: relative;
-    height: 100%;
-    width: 475px;
-}
-
-.contacts {left: 20px; }
-.quotes { left: 20px; }
-.info { left: 20px; }
-
-/* styles for the landing page index.html */
-
-.landing-page-left-image {
-    position: relative;
-    height: 500px;
-    width: 750px;
-}
-
-
-.landing-page-right-quote {
+#about {
     position: absolute;
-    right: 30px;
+    right: 80px;
     top: 10px;
-    width: 600px;
+    margin-right: 60px;
 }
 
-#landing-quote-author {
-    font-size: 20px;
-}
-
-#landing-quote-text {
-    font-size: 50px;
-}
 
 /* styles of the main elements in the body */
 
@@ -160,6 +118,18 @@ footer {
 
 
 /* official color: F9AA23 */
+.auth-form button, #create-party-form button, .selected-list button {
+    height: 50px;
+    width: 100px;
+    margin: 5px;
+}
+
+#profile {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
 .auth-form span {
     float: left;
     left: 5px;
@@ -178,10 +148,8 @@ footer {
     box-shadow: 0 0 0 0.25px rgb(40, 202, 121);
 }
 
-/* official color: F9AA23 */
-.auth-form button, #create-party-form button, .selected-list button, .government-position-form button, #submit-final-vote, #choose-voting-office tr td button,
-#voting-posts-div button, #select-office-to-view,  #create-office-form button,  .government-position-form button {
-    border: none;
+
+.auth-form button, #create-party-form button, .selected-list button, #select-office-to-view, #create-office-form button, .selected-list button, .government-position-form button  {
     height: 50px;
     margin-top: 5px;
     border: none;
@@ -192,8 +160,7 @@ footer {
     border:none;
 }
 
-.auth-form button:hover, #create-party-form button:hover, .selected-list button:hover, .government-position-form button:hover,  
-#choose-voting-office tr td button:hover, #voting-posts-div button:hover {
+.auth-form button:hover, #create-party-form button:hover, .selected-list button:hover {
     cursor: pointer;
 }
 
@@ -277,37 +244,19 @@ footer {
     height: 50px;
 }
 
-/* styles for the voting-page.html */
-
-.candidate-picture img {
-    height: 200px;
-    width: 200px;
-}
-
-#submit-final-vote {
-    width: 500px;
-    position: absolute;
-    left: 550px;
-    background-color: #28CA79;
-} 
-
-#submit-final-vote:hover {
+.selected-list button:hover {
     cursor: pointer;
 }
 
-#candidate-list {
-    margin: 0 auto;
-    width: 1000px;
+
+
+/* styles for the voting-page.html */
+/* #voting-positions-div {
+} */
+
+.candidate-list {
     text-align: center;
 }
-
-#candidate-list table {
-    border-collapse: separate;
-    border-spacing: 10px 0;
-    text-align: center;
-    border-spacing: 1em;
-}
-
 
 .candidate-list li {
     list-style-type: none;
@@ -365,41 +314,6 @@ footer {
 .politicians-table tr th {
     padding-top: 10px;
 }
-
-/* styles for the choose-post-to-vote.html */
-#voting-posts-div {
-    position: relative;
-    text-align: center;
-    width: 600px;
-    margin: 0 auto;
-}
-
-#choose-voting-office {
-    font-size: 25px;
-}
-
-#choose-voting-office tr>td {
-    padding-bottom: 1em;
-    padding-top: 1em;
-}
-
-#choose-voting-office tr td button {
-    width: 100px;
-}
-
-#choose-voting-office tr td button a {
-    text-decoration: none;
-    color: white;
-}
-
-
-#voting-posts-div button{
-    margin-top: 10px;
-    width: 250px;
-    background-color: #28CA79;
-}
-
-
 
 #voting-standings {
     height: 300px;
@@ -474,6 +388,11 @@ footer {
 
 .government-position-form button {
     width: 300px;
+    height: 50px;
+}
+
+.government-position-form button:hover {
+    cursor: pointer;
 }
 
 /* styles for the view-political-parties.html */
@@ -510,16 +429,20 @@ footer {
     right: 260px;
 }
 
-
-
-.politicians-table tr th { 
-    padding: 10px; 
+#profile {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+.politicians-table tr th {
+    padding: 10px;
 }
 
-.politicians-table, #voting-standings table { 
-    border-collapse: collapse; 
+.politicians-table, #voting-standings table {
+    border-collapse: collapse;
 }
 
 .politicians-table td, .politicians-table th, #voting-standings table td, #voting-standings table th {
     border: 1px solid black;
+
 }
