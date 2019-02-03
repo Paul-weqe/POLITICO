@@ -18,6 +18,9 @@ main {
     color: white;
 }
 
+a {
+    text-decoration: none;
+}
 
 header {
     position: fixed;

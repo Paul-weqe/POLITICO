@@ -4,18 +4,18 @@
     <head>
 
         <!-- links to css files -->
-        <link href="css/styles.css" rel="stylesheet"/>
+        <link href="../css/styles.css" rel="stylesheet"/>
     </head>
 
     <body>
-        
         <header>
-            <img src="images/politico_logo.png">
+            <a href="index.html"><img src="../images/politico_logo.png"></a>
             <nav>
                 <ul>
-                    <li><a href="#">Vote</a></li>
-                    <li><a href="#">View Parties</a></li>
-                    <li id="profile"><a href="#">Profile</a></li>
+                    <li><a href="admin-main.html">Admin</a></li>
+                    <li><a href="../politician/politician-express-interest.html">Politician</a></li>
+                    <li id="admin-right-navbar"><a href="../user-login.html">Login</a></li>
+                    <li id="politician-right-navbar"><a href="../user-register.html">Sign up</a></li>
                 </ul>
             </nav>
         </header>
@@ -23,7 +23,6 @@
         <div class="main-content">
 
             <form id="create-party-form">
-
                 <center><h2>Create a political party</h2></center>
                 <input type="text" placeholder="name of political party"/><br>
                 <textarea placeholder="description of party"></textarea><br>
@@ -34,9 +33,6 @@
 
         </div>
 
-        <footer>
-            
-        </footer>
 
     </body>
 </html>
